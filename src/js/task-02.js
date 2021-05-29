@@ -7,8 +7,13 @@ const ingredients = [
   "Приправы",
 ];
 
-const items = ingredients.map((item) => {
-  const liEl = document.createElement("li");
-  liEL. = item;
-});
-console.log(items);
+const ul = document.createElement("ul");
+
+for (const txt of ingredients) {
+  const li = document.createElement("li");
+  li.textContent = txt;
+  // console.log(li);
+  ul.appendChild(li);
+}
+console.log(ul);
+document.body.append(ul);

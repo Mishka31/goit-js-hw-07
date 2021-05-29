@@ -1,0 +1,5 @@
+.forOnlyFlex {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
