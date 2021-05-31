@@ -13,6 +13,8 @@ const refs = {
   increment: document.querySelector('[data-action="increment"]'),
   decrement: document.querySelector('[data-action="decrement"]'),
 };
+
+console.log(refs.increment);
 refs.increment.addEventListener("click", onButtonIncrement);
 refs.decrement.addEventListener("click", onButtonDecrement);
 
