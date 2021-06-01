@@ -7,13 +7,14 @@ const ingredients = [
   "Приправы",
 ];
 
-const ul = document.createElement("ul");
+const ul = document.querySelector("#ingredients");
 
-for (const txt of ingredients) {
-  const li = document.createElement("li");
-  li.textContent = txt;
-  // console.log(li);
-  ul.appendChild(li);
-}
-console.log(ul);
-document.body.append(ul);
+const createProductsItem = (i) => {
+  const liEl = document.createElement("li");
+  liEl.textContent = i;
+
+  return liEl;
+};
+
+const createIngredientsList = ingredients.map(createProductsItem);
+ul.append(...createIngredientsList);

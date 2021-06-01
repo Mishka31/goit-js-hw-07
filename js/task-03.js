@@ -14,6 +14,7 @@ const images = [
 ];
 
 const itemDocGallery = document.querySelector("#gallery");
+
 function createList(images) {
   return images
     .map(
