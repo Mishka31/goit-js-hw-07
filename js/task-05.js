@@ -6,7 +6,7 @@ refs.input.addEventListener("input", onInputChange);
 
 function onInputChange(params) {
   if (params.currentTarget.value === "") {
-    return;
+    return (refs.span.textContent = "незнакомец");
   }
   refs.span.textContent = params.currentTarget.value;
 }
